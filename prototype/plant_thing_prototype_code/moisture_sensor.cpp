@@ -27,7 +27,7 @@ void moisture_sensor_init(moisture_sensor_t* sensor, int pin)
     sensor->humidity = 1000;
 }
 
-void moisture_sensor_set_dry_reading(moisture_sensor_t* sensor, int dry)
+void moisture_sensor_set_dry_calibration(moisture_sensor_t* sensor, int dry)
 {
     if(!moisture_sensor_initialized(sensor))
     {
@@ -41,7 +41,7 @@ void moisture_sensor_set_dry_reading(moisture_sensor_t* sensor, int dry)
     }
 }
 
-void moisture_sensor_set_wet_reading(moisture_sensor_t* sensor, int wet)
+void moisture_sensor_set_wet_calibration(moisture_sensor_t* sensor, int wet)
 {
     if(!moisture_sensor_initialized(sensor))
     {
